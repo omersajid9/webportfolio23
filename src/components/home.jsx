@@ -8,14 +8,14 @@ const Home = () =>
                 <div className="grid grid-cols-3 ">
                     <div className='col-span-1'>
                             <div className='bg-inherit md:my-6 md:mx-1 rounded-3xl row-span-2'>
-                                <img className="h-52 w-52 object-cover rounded-full" src="../../public/avatar.png" />
+                                <img className="h-52 w-52 object-cover rounded-full" src="https://i.ibb.co/sWQV2Wg/Avatar-Maker-1.png" />
                             </div>
                             
                             <div className='bg-white opacity-75 m-2 rounded-3xl row-span-1'>
                                 <div className='flex md:flex-row flex-col items-center py-2 md:justify-evenly'>
                                     <a target="_blank" href="https://www.github.com/omersajid9"><img className="h-7 w-7 object-cover rounded-full cursor-pointer md:mt-0 md:mb-0 mt-3" src="https://github.com/github.png" /></a>
-                                    <a target="_blank" href="https://www.linkedin.com/in/omersajid9"><img className="h-7 w-7 object-cover rounded-full cursor-pointer md:mt-0 md:mb-0 mt-3" src="../../public/linkedin.png" /></a>
-                                    <a target="_blank" href="tel:+17653011753"><img className="h-7 w-7 object-cover rounded-full cursor-pointer bg-white opacity-75 md:mt-0 md:mb-0 mt-3" src="../../public/phone.png" /></a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/omersajid9"><img className="h-7 w-7 object-cover rounded-full cursor-pointer md:mt-0 md:mb-0 mt-3" src="https://i.ibb.co/4VypHB3/linkedin.png" /></a>
+                                    <a target="_blank" href="tel:+17653011753"><img className="h-7 w-7 object-cover rounded-full cursor-pointer bg-white opacity-75 md:mt-0 md:mb-0 mt-3" src="https://i.ibb.co/2y3df3F/phone.png" /></a>
                                     <a target="_blank" href="mailto:omersajid9@outlook.com"><img className="h-7 w-7 object-cover rounded-full cursor-pointer md:mt-0 md:mb-0 mt-3 mb-1" src="https://image.similarpng.com/very-thumbnail/2021/09/Outlook-icon-on-transparent-background-PNG.png" /></a>
                                 </div>  
                             </div>
