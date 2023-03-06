@@ -4,7 +4,7 @@ const Home = () =>
 {
     return(
         <div className="flex h-screen bg-inherit justify-center items-center overflow-hidden">
-            <div className="   bg-[#8BCDF9] bg-opacity-25 h-auto w-11/12 md:w-8/12 rounded-2xl p-2 border-b-8  border-richBlack shadow-2xl drop-shadow-2xl ">
+            <div className="   bg-[#8BCDF9] bg-opacity-25 h-auto w-11/12 md:w-7/12 rounded-2xl p-2 border-b-8  border-richBlack shadow-2xl drop-shadow-2xl ">
                 <div className="grid grid-cols-3 ">
                     <div className='col-span-1'>
                             <div className='bg-inherit md:my-6 md:mx-1 rounded-3xl row-span-2'>

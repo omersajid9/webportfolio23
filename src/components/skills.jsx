@@ -10,7 +10,7 @@ const TitleHeading = ({titleName, buttonOnClick}) =>
     const styling = toggle ? 'bg-black text-white shadow-lg shadow-white' : 'bg-white text-black shadow-lg shadow-black'
 
     return (
-        <button key={titleName} className={"md:m-2 m-1 px-2 py-1 md:py-2 md:px-4 rounded-2xl text-[0.45rem] md:text-sm shadow-lg font-text " + styling} onClick={()=>{setToggle(!toggle);buttonOnClick(titleName)}}>
+        <button key={titleName} className={"md:m-1 m-[0.2rem] w-fit px-2 py-1 md:py-1 md:px-2 lg:py-2 lg:px-4 rounded-2xl text-[0.6rem] md:text-xs lg:text-lg shadow-lg font-text " + styling} onClick={()=>{setToggle(!toggle);buttonOnClick(titleName)}}>
             {titleName}
         </button>
     )
@@ -81,13 +81,13 @@ const Skills = () => {
 
     return (
             <div className="flex h-auto bg-inherit justify-center items-center my-20">
-                <div className=" bg-[#F2E2BA] bg-opacity-25 h-auto w-10/12 rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl shadow-seaShell">
+                <div className=" bg-[#F2E2BA] bg-opacity-25 h-auto w-9/12 md:10/12 lg:w-9/12 rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl shadow-seaShell">
                     <div className='flex bg-none justify-center items-center md:mb-8'>
                         <div className='text-center text-lg md:text-3xl font-semibold font-text m-4 bg-inherit rounded-full py-2 px-4 shadow-black shadow-sm'>
                             SKILLS
                         </div>
                     </div>
-                    <div className="grid grid-rows-2 grid-flow-col overflow-hidden border-b-4 rounded-b-3xl border-black ">
+                    <div className="flex flex-row flex-wrap justify-center items-center overflow-hidden border-b-4 rounded-b-3xl border-black ">
                         {
                             Object.keys(skillsData).map((ke, val) =>
                             (
@@ -102,7 +102,7 @@ const Skills = () => {
                         {
                             skillsSet.map((skill)=> 
                             (
-                                <div key={skill} className="border-2 py-1 md:px-2 px-2 md:py-4 rounded-full font-text border-black text-black m-1">
+                                <div key={skill} className="border-2 px-1 md:px-2 py-2 md:py-4 sm:m-[0.1rem] text-xs sm:text-xs md:text-xs lg:text-base rounded-full font-text border-black text-black m-1">
                                     {skill}
                                 </div>
                             ))

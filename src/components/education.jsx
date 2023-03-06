@@ -16,7 +16,7 @@ const Education = () =>
 {
     return (
         <div className="flex h-max bg-inherit justify-center items-center">
-            <div className=" h-auto w-11/12 rounded-2xl p-2 border-b-8 border-richBlack drop-shadow-2xl shadow-2xl bg-[#BAF2BB] bg-opacity-25 pb-8">
+            <div className=" h-auto w-10/12 rounded-2xl p-2 border-b-8 border-richBlack drop-shadow-2xl shadow-2xl bg-[#BAF2BB] bg-opacity-25 pb-8">
                 <div className='flex bg-none justify-center items-center mb-8 '>
                     <div className='text-center text-lg md:text-3xl font-semibold font-text m-4 bg-inherit rounded-full py-2 px-4 shadow-black shadow-sm text-black'>
                         PROJECTS

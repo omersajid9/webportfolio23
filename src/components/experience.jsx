@@ -29,34 +29,34 @@ const Experience = () =>
 
     return (
         <div className="flex h-auto bg-inherit justify-center items-center">
-             <div className=" bg-[#F2BAC9] bg-opacity-25 h-auto w-11/12 md:w-full rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl">
+             <div className=" bg-[#F2BAC9] bg-opacity-25 h-auto w-9/12 md:w-10/12 rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl">
                 <div className='flex bg-none justify-center items-center m-8'>
                     <div className='text-center text-lg md:text-3xl font-semibold font-text md:mb-8 bg-inherit rounded-full py-2 px-4 shadow-black shadow-sm'>
                         EXPERIENCE
                     </div>
                 </div>
-                <div className="flex flex-auto-row overflow-y-auto md:overflow-visible md:grid md:grid-cols-2 space-x-3 md:-space-x-0 gap-0">
-                    <div className=' md:grid md:grid-rows-5 border-0 border-black gap-0 flex-auto-row flex space-x-3 md:space-x-0'>
+                <div className="flex flex-auto-row overflow-y-auto md:overflow-y-visible md:grid md:grid-cols-2 space-x-3 md:space-x-0 gap-0">
+                    <div className=' md:grid md:grid-rows-5 border-0 border-black gap-0 md:flex-none flex-auto-row flex space-x-3 md:space-x-0'>
                         {/* <div className='border-0 h-fit border-black m-0'>
                             <ExperienceCard CompanyName={experienceA[0]} Position={experienceA[1]} Duration={experienceA[2]} ImageSrc={experienceA[3]} additionalsetting={experienceA[4]}  />
                         </div> */}
-                        <div className='border-0 h-fit border-black'>
+                        <div className='border-0 h-fit  border-black'>
                             <ExperienceCard CompanyName={experienceA1[0]} Position={experienceA1[1]} Duration={experienceA1[2]} ImageSrc={experienceA1[3]} additionalsetting={experienceA1[4]} />
                         </div>
-                        <div className='border-0 h-fit border-black'>
+                        <div className='border-0 h-fit  border-black'>
                             <ExperienceCard CompanyName={experienceA2[0]} Position={experienceA2[1]} Duration={experienceA2[2]} ImageSrc={experienceA2[3]} additionalsetting={experienceA2[4]}  />
                         </div>
-                        <div className='border-0 h-fit border-black'>
+                        <div className='border-0 h-fit  border-black'>
                             <ExperienceCard CompanyName={experienceA3[0]} Position={experienceA3[1]} Duration={experienceA3[2]} ImageSrc={experienceA3[3]} additionalsetting={experienceA3[4]}  />
                         </div>
-                        <div className='border-0 h-fit border-black'>
+                        <div className='border-0 h-fit  border-black'>
                             <ExperienceCard CompanyName={experienceA4[0]} Position={experienceA4[1]} Duration={experienceA4[2]} ImageSrc={experienceA4[3]} additionalsetting={experienceA4[4]}  />
                         </div>
-                        <div className='border-0 h-fit border-black'>
+                        <div className='border-0 h-fit  border-black'>
                             <ExperienceCard CompanyName={experienceA5[0]} Position={experienceA5[1]} Duration={experienceA5[2]} ImageSrc={experienceA5[3]} additionalsetting={experienceA5[4]}  />
                         </div>
                     </div>
-                    <div className='md:grid md:grid-rows-5 border-0 border-black flex-auto-row flex space-x-3 md:space-x-0'>
+                    <div className='md:grid md:grid-rows-5 border-0 border-black flex-auto-row flex md:flex-none space-x-3 md:space-x-0'>
                         {/* <div className='border-0 h-fit border-black'>
                             <ExperienceCard CompanyName={experienceB[0]} Position={experienceB[1]} Duration={experienceB[2]} ImageSrc={experienceB[3]} additionalsetting={experienceB[4]}  />
                         </div> */}
