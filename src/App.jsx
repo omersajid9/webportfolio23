@@ -1,13 +1,6 @@
 import React, { useState, useRef, useEffect, forwardRef } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
-import { Link } from "react-scroll";
-import createBackground from './components/particle';
 
-// import Particles from 'react-particles-js';
-// import Particles from 'react-particles';
-// import Particles from 'react-tsparticles';
-// import {tsParticles} from "tsparticles-engine";
 import particlesConfig from './configParticles';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
