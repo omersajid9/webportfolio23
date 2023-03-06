@@ -1,0 +1,121 @@
+import {react, useState, useEffect, forwardRef} from 'react';
+
+
+
+const TitleHeading = ({titleName, buttonOnClick}) =>
+{
+
+    const [toggle, setToggle] = useState(true);
+
+    const styling = toggle ? 'bg-black text-white shadow-lg shadow-white' : 'bg-white text-black shadow-lg shadow-black'
+
+    return (
+        <button key={titleName} className={"md:m-2 m-1 px-2 py-1 md:py-2 md:px-4 rounded-2xl text-[0.45rem] md:text-sm shadow-lg font-text " + styling} onClick={()=>{setToggle(!toggle);buttonOnClick(titleName)}}>
+            {titleName}
+        </button>
+    )
+}
+
+
+const Skills = () => {
+    const skillsData = {
+        'Quantum Computing': ['Python', 'Qiskit', 'Qutip', 'Pennylane'],
+        'Machine Learning': ['Python', 'NumPy', 'SciPy', 'TensorFlow'],
+        'Website Development': ['JavaScript', 'ReactJs', 'Express', 'jQuery', 'Bootstrap', 'HTML5', 'CSS3', 'NodeJs', 'MongoDB', 'SQL'],
+        'Testing': ['JavsScript', 'Chai', 'Mocha'],
+        'Data Analysis': ['R', 'Python', 'FermiScienceTools', 'Root', 'C++'],
+        'Cloud Computing': ['AWS CLI', 'AWS S3', 'AWS EC2'],
+        'BlockChain': ['Solidity', 'Hardhat', 'OpenZepplin', 'Alchemy', 'Metamask'],
+        'Socket Programming': ['C'],
+        'Version Control': ['GitHub', 'Git'],
+        'Mobile Development': ['Java', 'Android Studio', 'MySQL', 'PHP']
+    }
+
+    const [selectedTitle, setSelectedTitle] = useState(['Quantum Computing', 'Machine Learning', 'Website Development', 'Testing', 'Data Analysis', 'Cloud Computing', 'BlockChain', 'Socket Programming', 'Version Control', 'Mobile Development']);
+    const [skillsSet, setSkillsSet] = useState(['OLLALA']);
+
+
+    const buttonClick = (name) =>
+    {
+        console.log(name)
+        if (selectedTitle.includes(name))
+        {
+            let a = selectedTitle.filter((item)=> {return item!== name;});
+            setSelectedTitle(a);
+        }
+        else
+        {
+            let a = [...selectedTitle];
+            a.push(name);
+            setSelectedTitle(a);
+        }
+    }
+
+    useEffect(()=>
+    {
+        
+        var list = []
+        for (let k in skillsData) 
+        {
+            for (let z in selectedTitle)
+            {
+                if (k == selectedTitle[z])
+                {
+                    list = list.concat(skillsData[k]);
+                }
+            }
+        }
+        let s = new Set(list);
+        s = Array.from(s)
+        s.sort()
+        setSkillsSet(s);
+        console.log(skillsSet)
+    }, [selectedTitle])
+
+    useEffect(()=>
+    {
+        console.log("AAA")
+        console.log(skillsSet);
+    }, [skillsSet])
+
+
+    return (
+            <div className="flex h-auto bg-inherit justify-center items-center my-20">
+                <div className=" bg-[#F2E2BA] bg-opacity-25 h-auto w-10/12 rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl shadow-seaShell">
+                    <div className='flex bg-none justify-center items-center md:mb-8'>
+                        <div className='text-center text-lg md:text-3xl font-semibold font-text m-4 bg-inherit rounded-full py-2 px-4 shadow-black shadow-sm'>
+                            SKILLS
+                        </div>
+                    </div>
+                    <div className="grid grid-rows-2 grid-flow-col overflow-hidden border-b-4 rounded-b-3xl border-black ">
+                        {
+                            Object.keys(skillsData).map((ke, val) =>
+                            (
+                                <TitleHeading key={ke} titleName={ke} buttonOnClick={buttonClick}/>
+                                // <button key={ke} className="m-2 py-2 px-4 rounded-lg bg-opacity-60 text-black text-sm" onClick={()=>buttonClick(ke)}>
+                                //     {ke}
+                                // </button>
+                            ))
+                        }
+                    </div>
+                    <div className='flex flex-wrap md:flex md:flex-wrap justify-center items-center h-auto p-2 md:p-4'>
+                        {
+                            skillsSet.map((skill)=> 
+                            (
+                                <div key={skill} className="border-2 py-1 md:px-2 px-2 md:py-4 rounded-full font-text border-black text-black m-1">
+                                    {skill}
+                                </div>
+                            ))
+                        }
+                    </div>
+
+                    
+
+
+                    
+                </div>
+            </div>
+    )
+}
+
+export default Skills;
