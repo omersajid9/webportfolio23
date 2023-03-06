@@ -29,7 +29,7 @@ const Home = () =>
                             
                         </div>
                         <div className="bg-white opacity-80 rounded-bl-2xl rounded-tr-2xl rounded-br-2xl rounded-tl-2xl row-span-1 p-2 px-3 m-2"> 
-                            <h1 className="text-base text-black font-semibold font-text"> Hey, welcome! I am an enthusiastic learner in algorithms and full-stack application development. </h1>
+                            <h1 className="text-base text-black font-semibold font-text"> Hey, welcome! I am an enthusiastic learner in algorithms and full-stack app development. </h1>
                         </div>
                         <div className="bg-white opacity-80 rounded-bl-2xl rounded-tr-2xl rounded-br-2xl rounded-tl-2xl row-span-1 p-2 px-3 m-2"> 
                             <h1 className="text-base text-black font-semibold font-text"> I am a recent CS graduate and am actively looking for exciting work opportunities.</h1>
