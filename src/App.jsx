@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div ref={bigPage} className="App items-center justify-center bg-fixed overflow-hidden">
-      <Particles
+      <Particles className="overflow-hidden"
       id="tsparticles"
       init={particlesInit}
 
