@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsc && vite build && vite preview",
     "build": "vite build",
-    "serve": "vite --host 0.0.0.0 --port 29145 preview"
+    "serve-heroku": "vite --host 0.0.0.0 --port 29145 preview"
     },
   "dependencies": {
     "react": "^18.2.0",
