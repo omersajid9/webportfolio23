@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "tsc && vite build && vite preview",
     "build": "vite build",
-    "preview": "vite preview --port 29145",
-    "start": "npm run dev"
+    "serve": "vite --host 0.0.0.0 --port 29145 preview"
     },
   "dependencies": {
     "react": "^18.2.0",
