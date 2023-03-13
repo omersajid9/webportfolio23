@@ -3,6 +3,8 @@ import {react, useState} from 'react';
 import { BsFillArrowDownCircleFill, BsFillArrowUpCircleFill } from 'react-icons/bs';
 
 
+
+
 const ProjectCard = ({Title, Video, Description, githubLink}) =>
 {
     const [desbool, setDesBool] = useState(false)
@@ -10,19 +12,19 @@ const ProjectCard = ({Title, Video, Description, githubLink}) =>
 
     return (
         <div className='justify-center items-center flex flex-col'>
-                        <div className="bg-black h-48 md:h-56 md:w-11/12 rounded-lg md:rounded-3xl p-1 md:p-3 shadow-md bg-cover bg-center z-1">
+                        <div className="bg-black h-48 md:h-56 md:w-11/12 rounded-lg md:rounded-3xl p-6 md:p-3 shadow-md bg-cover bg-center z-1">
                         {/* <video id="video" class="w-full h-full" autoPlay muted loop>
                             <source src="https://youtu.be/20ekO3yLyUE" type="video/mp4"></source>
                         </video> */}
-                            <iframe className='h-fit md:h-full w-fit md:w-full' frameBorder="0" seamless="seamless" src={Video} title="20230302_214149 (online-video-cutter.com).mp4" webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen></iframe>
+                            <iframe className='h-fit md:h-full  w-fit md:w-full' frameBorder="0" seamless="seamless" src={Video} title="20230302_214149 (online-video-cutter.com).mp4" webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen></iframe>
                         </div>
-                        <div className=" md:w-9/12 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-2 md:p-5">
+                        <div className="w-8/12 md:w-9/12 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-2 md:p-5">
                         
-                            <div className="test-sm md:text-base font-medium font-text text-center border-b-2 border-black ">{Title}</div>
+                            <div className="test-sm md:text-lg font-bold font-text text-center border-b-2 border-black ">{Title}</div>
 
                             {desbool ? (
-                                <div className='w-12/12 '>
-                                    <div className="text-[0.5rem] md:text-xs font-text text-center ">
+                                <div className='w-12/12 p-2 md:p-0 md:pt-2'>
+                                    <div className="text-[0.8rem] md:text-[0.85rem] font-text text-center ">
                                         {Description}
                                     </div>
                                     <div className='flex justify-around mt-2 md:mt-0'>

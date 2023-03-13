@@ -6,12 +6,12 @@ const Home = () =>
         <div className="flex h-screen bg-inherit justify-center items-center overflow-hidden">
             <div className="   bg-[#8BCDF9] bg-opacity-25 h-auto w-11/12 md:w-7/12 rounded-2xl p-2 border-b-8  border-richBlack shadow-2xl drop-shadow-2xl ">
                 <div className="grid grid-cols-3 ">
-                    <div className='col-span-1'>
-                            <div className='bg-inherit md:my-6 md:mx-1 rounded-3xl row-span-2'>
+                    <div className='col-span-1 flex justify-between flex-col-reverse md:flex-col'>
+                            <div className='bg-inherit my-4 md:my-6 md:mx-1 rounded-3xl row-span-2'>
                                 <img className="h-52 w-52 object-cover rounded-full" src="https://i.ibb.co/sWQV2Wg/Avatar-Maker-1.png" />
                             </div>
                             
-                            <div className='bg-white opacity-75 m-2 rounded-3xl row-span-1'>
+                            <div className='bg-white opacity-75 md:m-1 rounded-3xl row-span-1 my-2 mx-1.5'>
                                 <div className='flex md:flex-row flex-col items-center py-2 md:justify-evenly'>
                                     <a target="_blank" href="https://www.github.com/omersajid9"><img className="h-7 w-7 object-cover rounded-full cursor-pointer md:mt-0 md:mb-0 mt-3" src="https://github.com/github.png" /></a>
                                     <a target="_blank" href="https://www.linkedin.com/in/omersajid9"><img className="h-7 w-7 object-cover rounded-full cursor-pointer md:mt-0 md:mb-0 mt-3" src="https://i.ibb.co/4VypHB3/linkedin.png" /></a>
@@ -23,7 +23,7 @@ const Home = () =>
                     <div className='col-span-2'>
                         <div className='flex bg-white opacity-80 justify-center items-center mb-1 border-b-4 border-r-4 border-l-4 rounded-b-2xl md:rounded-b-full border-black -my-2 m-4'>
                             <div className=' text-center text-lg font-text font-bold  bg-none md:rounded-b-3xl py-2 px-4 shadow-black '>
-                                Muhammad Omer Sajid
+                                Omer Sajid
                             </div>
                             
                             

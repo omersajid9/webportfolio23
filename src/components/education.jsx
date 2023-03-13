@@ -23,7 +23,7 @@ const Education = () =>
                     </div>
                 </div>
                 
-                <div className='snap-x snap-mandatory md:flexn md:flex-none flex flex-auto-row overflow-x-auto w-full md:grid md:grid-cols-3 gap-4 md:snap-none'>
+                <div className='snap-x snap-mandatory md:flexn md:flex-none flex flex-auto-row overflow-x-auto w-full md:grid md:grid-cols-3 gap-4 md:snap-none md:scrollbar-none scrollbar-thin scrollbar-thumb-violet-800'>
                     <div className="snap-center md:snap-none">
                         <ProjectCard  Title={experience1[0]} Video={experience1[1]} Description={experience1[2]} githubLink={experience1[3]}/>
                     </div>

@@ -35,7 +35,7 @@ const Experience = () =>
                         EXPERIENCE
                     </div>
                 </div>
-                <div className="flex flex-auto-row overflow-y-auto md:overflow-y-visible md:grid md:grid-cols-2 space-x-3 md:space-x-0 gap-0">
+                <div className="flex flex-auto-row overflow-y-auto md:overflow-y-visible md:grid md:grid-cols-2 space-x-3 md:space-x-0 gap-0 md:scrollbar-none scrollbar-thin scrollbar-thumb-yellow-800 md:py-2 px-2 md:px-0">
                     <div className=' md:grid md:grid-rows-5 border-0 border-black gap-0 md:flex-none flex-auto-row flex space-x-3 md:space-x-0'>
                         {/* <div className='border-0 h-fit border-black m-0'>
                             <ExperienceCard CompanyName={experienceA[0]} Position={experienceA[1]} Duration={experienceA[2]} ImageSrc={experienceA[3]} additionalsetting={experienceA[4]}  />

@@ -67,7 +67,7 @@ function App() {
         </ul>
       </div>
         </div>
-        <div className='snap-y h-screen  overflow-y-scroll scrollbar-none snap-mandatory md:col-span-7 md:col-start-4 md:col-end-11 overflow-hidden'>
+        <div className='snap-y h-[90vh] my-[5vh] md:h-screen md:my-0 overflow-y-scroll scrollbar-none snap-mandatory md:col-span-7 md:col-start-4 md:col-end-11 overflow-hidden'>
           <div ref={homeRef} id="Home" className="snap-center">
             <Home />
             

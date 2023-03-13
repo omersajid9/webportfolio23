@@ -10,7 +10,7 @@ const TitleHeading = ({titleName, buttonOnClick, enlight}) =>
     const styling = toggle ? 'bg-black text-white shadow-lg shadow-white' : 'bg-white text-black shadow-lg shadow-black'
 
     return (
-        <button key={titleName} className={"md:m-1 m-[0.2rem] w-fit px-2 py-1 md:py-1 md:px-2 lg:py-2 lg:px-4 rounded-2xl text-[0.6rem] md:text-xs lg:text-lg shadow-lg font-text " + styling} onClick={()=>{setToggle(!toggle);buttonOnClick(titleName)}}>
+        <button key={titleName} className={"md:m-1 m-[0.2rem] w-fit px-2.5 py-1.5 md:py-1 md:px-2 lg:py-2 lg:px-4 rounded-2xl text-[0.8rem] md:text-xs lg:text-lg shadow-lg font-text " + styling} onClick={()=>{setToggle(!toggle);buttonOnClick(titleName)}}>
             {titleName}
         </button>
     )
@@ -101,7 +101,7 @@ const Skills = () => {
                         {
                             skillsSet.map((skill)=> 
                             (
-                                <div key={skill} className="border-2 px-1 md:px-2 py-1 md:py-4 sm:m-[0.1rem] text-xs sm:text-xs md:text-xs lg:text-base rounded-full font-text border-black text-black m-1">
+                                <div key={skill} className="border-2 px-1 md:px-2 py-1 md:py-4 m-[0.1rem] text-xs sm:text-xs md:text-xs lg:text-base rounded-full font-text border-black text-black md:m-1">
                                     {skill}
                                 </div>
                             ))
