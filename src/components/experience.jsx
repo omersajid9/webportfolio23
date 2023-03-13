@@ -10,7 +10,7 @@ const Experience = () =>
     const experienceA1 = ["Quantum theory division intern", "Fermi National Accelerator Laboratory", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a1]
     const a2 = " bg-inherit border-cyan-800 md:rounded-l-3xl md:rounded-r-none rounded-3xl"
     const experienceA2 = ["Summer Internship in Science & Technology", "Fermi National Accelerator Laboratory", "May '22 - August '22", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a2]
-    const a3 = " bg-inherit border-green-800 rounded-3xl md:rounded-r-none md:rounded-l-3xl md:-mt-1 md:border-t-8 md:border-l-8 md:border-b-8"
+    const a3 = " bg-inherit border-green-800 rounded-3xl md:rounded-r-none md:rounded-l-3xl md:-mt-2 md:border-t-8 md:border-l-8 md:border-b-8"
     const experienceA3 = ["Research Assistant: UCNtau Experiment", "DePauw University", "September '20 - August '21", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a3]
     const a4 = " bg-inherit border-indigo-800 rounded-3xl md:rounded-r-none md:rounded-l-3xl"
     const experienceA4 = ["Research Assistant: Crab Nebula", "DePauw University", "May '20 - August '20", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a4]
@@ -35,8 +35,8 @@ const Experience = () =>
                         EXPERIENCE
                     </div>
                 </div>
-                <div className="flex flex-auto-row overflow-y-auto md:overflow-y-visible md:flex md:flex-row justify-center space-x-3 md:space-x-0 gap-0 md:scrollbar-none scrollbar-thin scrollbar-thumb-yellow-800 md:py-2 px-2 md:px-4">
-                    <div className=' md:grid md:grid-row-5 border-0 border-black gap-0 md:flex-none flex-auto-row flex space-x-3 md:space-x-0'>
+                <div className="flex flex-auto-row overflow-y-auto md:overflow-y-visible md:flex md:flex-row md:justify-center space-x-3 md:space-x-0 gap-0 md:scrollbar-none scrollbar-thin scrollbar-thumb-yellow-800 md:py-2 px-2 md:px-4">
+                    <div className=' md:grid md:grid-rows-5 border-0 border-black gap-0 md:flex-none flex-auto-row flex space-x-3 md:space-x-0'>
                         {/* <div className='border-0 h-fit border-black m-0'>
                             <ExperienceCard CompanyName={experienceA[0]} Position={experienceA[1]} Duration={experienceA[2]} ImageSrc={experienceA[3]} additionalsetting={experienceA[4]}  />
                         </div> */}
@@ -55,12 +55,12 @@ const Experience = () =>
                         <div className='border-0 h-fit  border-black'>
                             <ExperienceCard CompanyName={experienceA5[0]} Position={experienceA5[1]} Duration={experienceA5[2]} ImageSrc={experienceA5[3]} additionalsetting={experienceA5[4]}  />
                         </div>
-                    </div>
+                    </div>  
                     <div className='md:grid md:grid-rows-5 border-0 border-black flex-auto-row flex md:flex-none space-x-3 md:space-x-0'>
                         {/* <div className='border-0 h-fit border-black'>
                             <ExperienceCard CompanyName={experienceB[0]} Position={experienceB[1]} Duration={experienceB[2]} ImageSrc={experienceB[3]} additionalsetting={experienceB[4]}  />
                         </div> */}
-                        <div className='border-0 h-fit border-black '>
+                        <div className='border-0 h-fit border-black'>
                             <ExperienceCard CompanyName={experienceB1[0]} Position={experienceB1[1]} Duration={experienceB1[2]} ImageSrc={experienceB1[3]} additionalsetting={experienceB1[4]}  />
                         </div>
                         <div className='border-0 h-fit border-black'>
