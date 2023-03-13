@@ -16,7 +16,7 @@ const ProjectCard = ({Title, Video, Description, githubLink}) =>
                         {/* <video id="video" class="w-full h-full" autoPlay muted loop>
                             <source src="https://youtu.be/20ekO3yLyUE" type="video/mp4"></source>
                         </video> */}
-                            <iframe className='h-fit md:h-full  w-fit md:w-full' frameBorder="0" seamless="seamless" src={Video} title="20230302_214149 (online-video-cutter.com).mp4" webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen></iframe>
+                            <iframe className='h-fit md:h-full  w-fit md:w-full z-40' frameBorder="0" seamless="seamless" src={Video} title="20230302_214149 (online-video-cutter.com).mp4" webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen></iframe>
                         </div>
                         <div className="w-8/12 md:w-9/12 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-2 md:p-5">
                         
