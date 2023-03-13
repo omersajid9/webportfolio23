@@ -29,13 +29,13 @@ const Home = () =>
                             
                         </div>
                         <div className="bg-white opacity-80 rounded-bl-2xl rounded-tr-2xl rounded-br-2xl rounded-tl-2xl row-span-1 p-2 px-3 m-2"> 
-                            <h1 className="text-base text-black font-semibold font-text"> Hey, welcome! I am an enthusiastic learner in algorithms and full-stack app development. </h1>
+                            <h1 className="text-[0.8rem] md:text-base text-black font-semibold font-text"> Hey, welcome! I am a recent Computer Science graduate from DePauw University, IN, and am currently working with Fermilab on a quantum computing research project. </h1>
                         </div>
                         <div className="bg-white opacity-80 rounded-bl-2xl rounded-tr-2xl rounded-br-2xl rounded-tl-2xl row-span-1 p-2 px-3 m-2"> 
-                            <h1 className="text-base text-black font-semibold font-text"> I am a recent CS graduate and am actively looking for exciting work opportunities.</h1>
+                            <h1 className="text-[0.8rem] md:text-base text-black font-semibold font-text"> I am passionate about full-stack application development and solving complex mathematical algorithms using programming.</h1>
                         </div>
                         <div className="bg-white opacity-80 rounded-tl-2xl rounded-tr-2xl rounded-br-2xl row-span-1 p-2 px-3 m-2"> 
-                            <h1 className="text-base text-black font-semibold font-text"> Enjoy my portfolio! If you like it, definitely hit me a up and we can chat further. </h1>
+                            <h1 className="text-[0.8rem] md:text-base text-black font-semibold font-text"> Enjoy my portfolio! If you like it, and have curious ideas to share, I would love to chat with you. </h1>
                         </div>
                     </div>
                     

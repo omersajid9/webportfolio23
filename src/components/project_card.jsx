@@ -3,7 +3,7 @@ import {react, useState} from 'react';
 import { BsFillArrowDownCircleFill, BsFillArrowUpCircleFill } from 'react-icons/bs';
 
 
-const ProjectCard = ({Title, Video, Description}) =>
+const ProjectCard = ({Title, Video, Description, githubLink}) =>
 {
     const [desbool, setDesBool] = useState(false)
 
@@ -27,14 +27,14 @@ const ProjectCard = ({Title, Video, Description}) =>
                                     </div>
                                     <div className='flex justify-around mt-2 md:mt-0'>
                                         <button className="bg-inherit text-blue-900 md:mt-4 block rounded md:p-2 text-sm" onClick={()=>setDesBool(false)}><BsFillArrowUpCircleFill/></button>
-                                        <button className="bg-inherit text-blue-500 md:mt-4 block rounded md:p-2 text-sm"><img className="h-5 w-5 object-cover rounded-3xl cursor-pointer" src="https://github.com/github.png" /></button>
+                                        <a href={githubLink} target='_blank'><button className="bg-inherit text-blue-500 md:mt-4 block rounded md:p-2 text-sm"><img className="h-5 w-5 object-cover rounded-3xl cursor-pointer" src="https://github.com/github.png" /></button></a>
                                     </div>
                                 </div>
                             ) : (
                                 <div className='min-w-max md:w-full'>
                                     <div className='flex justify-around mt-2 md:mt-0'>
                                         <button className="bg-inherit text-green-500 md:mt-4 block rounded p-2 text-sm" onClick={()=>setDesBool(true)}><BsFillArrowDownCircleFill/></button>
-                                        <button className="bg-inherit text-black md:mt-4 block rounded p-2 text-sm"><img className="h-5 w-5 object-cover rounded-full cursor-pointer" src="https://github.com/github.png" /></button>
+                                        <a href={githubLink} target='_blank'><button className="bg-inherit text-black md:mt-4 block rounded p-2 text-sm"><img className="h-5 w-5 object-cover rounded-full cursor-pointer" src="https://github.com/github.png" /></button></a>
                                     </div>
                                 </div>
                                 

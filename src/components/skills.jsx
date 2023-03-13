@@ -2,10 +2,10 @@ import {react, useState, useEffect, forwardRef} from 'react';
 
 
 
-const TitleHeading = ({titleName, buttonOnClick}) =>
+const TitleHeading = ({titleName, buttonOnClick, enlight}) =>
 {
 
-    const [toggle, setToggle] = useState(true);
+    const [toggle, setToggle] = useState(enlight);
 
     const styling = toggle ? 'bg-black text-white shadow-lg shadow-white' : 'bg-white text-black shadow-lg shadow-black'
 
@@ -31,7 +31,7 @@ const Skills = () => {
         'Mobile Development': ['Java', 'Android Studio', 'MySQL', 'PHP']
     }
 
-    const [selectedTitle, setSelectedTitle] = useState(['Quantum Computing', 'Machine Learning', 'Website Development', 'Testing', 'Data Analysis', 'Cloud Computing', 'BlockChain', 'Socket Programming', 'Version Control', 'Mobile Development']);
+    const [selectedTitle, setSelectedTitle] = useState(['Website Development']);
     const [skillsSet, setSkillsSet] = useState(['OLLALA']);
 
 
@@ -90,12 +90,11 @@ const Skills = () => {
                     <div className="flex flex-row flex-wrap justify-center items-center overflow-hidden border-b-4 rounded-b-3xl border-black ">
                         {
                             Object.keys(skillsData).map((ke, val) =>
-                            (
-                                <TitleHeading key={ke} titleName={ke} buttonOnClick={buttonClick}/>
-                                // <button key={ke} className="m-2 py-2 px-4 rounded-lg bg-opacity-60 text-black text-sm" onClick={()=>buttonClick(ke)}>
-                                //     {ke}
-                                // </button>
-                            ))
+                            {
+                                return ke == selectedTitle[0] ? (<TitleHeading key={ke} titleName={ke} buttonOnClick={buttonClick} enlight={true}/>) : (<TitleHeading key={ke} titleName={ke} buttonOnClick={buttonClick} enlight={false}/>)
+                            }
+
+                            )
                         }
                     </div>
                     <div className='flex flex-wrap md:flex md:flex-wrap justify-center items-center h-auto p-2 md:p-4'>
