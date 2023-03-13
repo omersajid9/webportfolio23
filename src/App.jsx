@@ -27,7 +27,7 @@ function App() {
 
   const scrollToSection = (elementRef) =>
   {
-    elementRef.current.scrollIntoView({behavior: 'smooth'});
+    elementRef.current.scrollIntoView({behavior: 'smooth', block:'center'});
   }
   console.log(particlesConfig)
 
