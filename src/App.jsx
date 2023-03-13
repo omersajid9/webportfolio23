@@ -48,8 +48,8 @@ function App() {
 
       options={particlesConfig}
     />
-<div className="grid md:grid-cols-12 w-full md:w-11/12 md:mx-auto grid-cols-1  bg-white overflow-hidden">
-        <div className="md:flex justify-center md:col-span-1 items-center md:col-start-2 md:col-end-4 flex-row">
+<div className="grid md:grid-cols-12 w-full md:w-11/12 lg:w-12/12 md:mx-auto grid-cols-1  bg-white overflow-hidden">
+        <div className="md:flex justify-center md:col-span-1 items-center md:col-start-1 md:col-end-3 lg:col-start-2 lg:col-end-3 flex-row">
         <div className=" bg-inherit rounded-br-xl rounded-bl-xl justify-between md:justify-center fixed w-full md:w-fit px-6 md:items-center py-6 z-10">
         <ul className="flex  md:flex-col justify-between items-center">
             <li className="md:mx-10 md:my-5">
@@ -67,7 +67,7 @@ function App() {
         </ul>
       </div>
         </div>
-        <div className='snap-y h-[90vh] my-[5vh] md:h-screen md:my-0 overflow-y-scroll scrollbar-none snap-mandatory md:col-span-7 md:col-start-4 md:col-end-11 overflow-hidden'>
+        <div className='snap-y h-screen my-0 overflow-y-scroll scrollbar-none snap-mandatory md:col-span-9 md:col-start-3 md:col-end-13 lg:col-span-7 lg:col-start-3 lg:col-end-12 overflow-hidden'>
           <div ref={homeRef} id="Home" className="snap-center">
             <Home />
             

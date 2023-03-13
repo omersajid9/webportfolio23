@@ -5,38 +5,38 @@ import ExperienceCard from './experience_card';
 const Experience = () =>
 {
     const a = " bg-inherit border-violet-800 rounded-l-3xl md:border-t-8"
-    const experienceA = ["Fermi National Accelerator Laboratory", "Quantum theory division intern", "August 2022 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a]
+    const experienceA = ["Fermi National Accelerator Laboratory", "Quantum theory division intern", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a]
     const a1 = " bg-inherit border-blue-800 rounded-3xl md:rounded-r-none md:rounded-l-3xl md:border-t-8 md:border-l-8 md:border-b-8 md:-mt-2"
-    const experienceA1 = ["Quantum theory division intern", "Fermi National Accelerator Laboratory", "August 2022 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a1]
+    const experienceA1 = ["Quantum theory division intern", "Fermi National Accelerator Laboratory", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a1]
     const a2 = " bg-inherit border-cyan-800 md:rounded-l-3xl md:rounded-r-none rounded-3xl"
-    const experienceA2 = ["Summer Internship in Science & Technology", "Fermi National Accelerator Laboratory", "May 2022 - August 2022", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a2]
-    const a3 = " bg-inherit border-green-800 rounded-3xl md:rounded-r-none md:rounded-l-3xl md:-mt-2 md:border-t-8 md:border-l-8 md:border-b-8"
-    const experienceA3 = ["Research Assistant: UCNtau Experiment", "DePauw University", "September 2020 - August 2021", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a3]
+    const experienceA2 = ["Summer Internship in Science & Technology", "Fermi National Accelerator Laboratory", "May '22 - August '22", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a2]
+    const a3 = " bg-inherit border-green-800 rounded-3xl md:rounded-r-none md:rounded-l-3xl md:-mt-1 md:border-t-8 md:border-l-8 md:border-b-8"
+    const experienceA3 = ["Research Assistant: UCNtau Experiment", "DePauw University", "September '20 - August '21", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a3]
     const a4 = " bg-inherit border-indigo-800 rounded-3xl md:rounded-r-none md:rounded-l-3xl"
-    const experienceA4 = ["Research Assistant: Crab Nebula", "DePauw University", "May 2020 - August 2020", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a4]
+    const experienceA4 = ["Research Assistant: Crab Nebula", "DePauw University", "May '20 - August '20", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a4]
     const a5 = " bg-inherit border-yellow-500 rounded-3xl md:rounded-r-none md:rounded-l-3xl rounded-br-3xl md:-mt-2 md:border-t-8 md:border-l-8 md:border-b-8"
-    const experienceA5 = ["Teacher Assistant, Modern Physics 1", "DePauw University", "January 2020 - May 2020", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a5]
+    const experienceA5 = ["Teacher Assistant, Modern Physics 1", "DePauw University", "January '20 - May '20", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a5]
     const b = "bg-inherit border-violet-800 rounded-3xl md:rounded-l-none md:rounded-r-3xl md:border-t-8 md:border-r-8 md:border-b-8"
-    const experienceB = ["Fermi National Accelerator Laboratory", "Quantum theory division intern", "August 2022 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", b]
+    const experienceB = ["Fermi National Accelerator Laboratory", "Quantum theory division intern", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", b]
     const b1 = "bg-inherit border-indigo-800 rounded-3xl md:rounded-l-none md:rounded-r-3xl md:border-t-8 md:-mt-2"
-    const experienceB1 = ["Blockchain development mentorship", "Dr. Appolo Tankeh", "December 2022 - March 2023", "https://w7.pngwing.com/pngs/1006/534/png-transparent-mentorship-youth-mentoring-spark-career-mentors-blue-text-logo.png", b1]
+    const experienceB1 = ["Blockchain development mentorship", "Dr. Appolo Tankeh", "December '22 - March '23", "https://w7.pngwing.com/pngs/1006/534/png-transparent-mentorship-youth-mentoring-spark-career-mentors-blue-text-logo.png", b1]
     const b2 = "bg-inherit border-cyan-800 rounded-3xl md:rounded-l-none md:rounded-r-3xl md:border-t-8 md:border-r-8 md:border-b-8 md:-mt-2"
-    const experienceB2 = ["First Year Resident Assistant", "Housing & Residence Life", "July 2021 - June2022", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", b2]
+    const experienceB2 = ["First Year Resident Assistant", "Housing & Residence Life", "July '21 - June '22", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", b2]
     const b3 = "bg-inherit border-green-800 rounded-3xl md:rounded-l-none md:rounded-r-3xl"
-    const experienceB3 = ["Teacher Assistant, Computer Science 120", "DePauw University", "January 2021 - May 2021", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", b3]
+    const experienceB3 = ["Teacher Assistant, Computer Science 120", "DePauw University", "January '21 - May '21", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", b3]
     const b4 = "bg-inherit border-orange-800 rounded-3xl md:rounded-l-none md:rounded-r-3xl md:border-t-8 md:border-r-8 md:border-b-8 md:-mt-2"
     const experienceB4 = ["ITAP Associate", "Tenzer Technology Center", "August 2020 - May 2021", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", b4]
 
     return (
         <div className="flex h-auto bg-inherit justify-center items-center">
-             <div className=" bg-[#F2BAC9] bg-opacity-25 h-auto w-9/12 md:w-10/12 rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl">
+             <div className=" bg-[#F2BAC9] bg-opacity-25 h-auto w-9/12 md:w-full lg:w-fit rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl">
                 <div className='flex bg-none justify-center items-center m-8'>
                     <div className='text-center text-lg md:text-3xl font-semibold font-text md:mb-8 bg-inherit rounded-full py-2 px-4 shadow-black shadow-sm'>
                         EXPERIENCE
                     </div>
                 </div>
-                <div className="flex flex-auto-row overflow-y-auto md:overflow-y-visible md:grid md:grid-cols-2 space-x-3 md:space-x-0 gap-0 md:scrollbar-none scrollbar-thin scrollbar-thumb-yellow-800 md:py-2 px-2 md:px-0">
-                    <div className=' md:grid md:grid-rows-5 border-0 border-black gap-0 md:flex-none flex-auto-row flex space-x-3 md:space-x-0'>
+                <div className="flex flex-auto-row overflow-y-auto md:overflow-y-visible md:flex md:flex-row justify-center space-x-3 md:space-x-0 gap-0 md:scrollbar-none scrollbar-thin scrollbar-thumb-yellow-800 md:py-2 px-2 md:px-4">
+                    <div className=' md:grid md:grid-row-5 border-0 border-black gap-0 md:flex-none flex-auto-row flex space-x-3 md:space-x-0'>
                         {/* <div className='border-0 h-fit border-black m-0'>
                             <ExperienceCard CompanyName={experienceA[0]} Position={experienceA[1]} Duration={experienceA[2]} ImageSrc={experienceA[3]} additionalsetting={experienceA[4]}  />
                         </div> */}
