@@ -30,8 +30,8 @@ const Experience = () =>
     return (
         <div className="flex h-auto bg-inherit justify-center items-center">
              <div className=" bg-[#F2BAC9] bg-opacity-25 h-auto w-9/12 md:w-full lg:w-fit rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl">
-                <div className='flex bg-none justify-center items-center m-8'>
-                    <div className='text-center text-lg md:text-3xl font-semibold font-text md:mb-8 bg-inherit rounded-full py-2 px-4 shadow-black shadow-sm'>
+                <div className='flex bg-none justify-center items-center md:mb-8'>
+                    <div className='text-center text-lg md:text-3xl font-semibold font-text m-4 md:mb-8 bg-inherit rounded-full py-2 px-4 shadow-black shadow-sm'>
                         EXPERIENCE
                     </div>
                 </div>

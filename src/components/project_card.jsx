@@ -20,7 +20,7 @@ const ProjectCard = ({Title, Video, Description, githubLink}) =>
                         </div>
                         <div className="w-8/12 md:w-9/12 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-2 md:p-5">
                         
-                            <div className="test-sm md:text-lg font-bold font-text text-center border-b-2 border-black ">{Title}</div>
+                            <div className="test-sm md:text-lg font-bold font-text text-center border-b-2 border-black z-50">{Title}</div>
 
                             {desbool ? (
                                 <div className='w-12/12 p-2 md:p-0 md:pt-2'>

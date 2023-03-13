@@ -23,11 +23,12 @@ function App() {
   const experienceRef = useRef(null);
   const skillsRef = useRef(null);
   const bigPage = useRef(null);
-  const particles = useRef(null);
+  const scrollPage = useRef(null);
 
   const scrollToSection = (elementRef) =>
   {
-    elementRef.current.scrollIntoView({behavior: 'smooth', block:'center'});
+    scrollPage.current.scrollTo({top: elementRef.current.offsetTop, behavior:'smooth'})
+    // elementRef.current.scrollIntoView({behavior: 'smooth', block:'center'});
   }
   console.log(particlesConfig)
 
@@ -67,7 +68,7 @@ function App() {
         </ul>
       </div>
         </div>
-        <div className='snap-y h-screen my-0 overflow-y-scroll scrollbar-none snap-mandatory md:col-span-9 md:col-start-3 md:col-end-13 lg:col-span-7 lg:col-start-3 lg:col-end-12 overflow-hidden'>
+        <div ref={scrollPage} className='snap-y h-screen my-0 overflow-y-scroll scrollbar-none snap-mandatory md:col-span-9 md:col-start-3 md:col-end-13 lg:col-span-7 lg:col-start-3 lg:col-end-12 overflow-hidden'>
           <div ref={homeRef} id="Home" className="snap-center">
             <Home />
             
