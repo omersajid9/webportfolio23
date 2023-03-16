@@ -17,6 +17,9 @@ module.exports = {
       },
       fontFamily: {
         'text': ['"Jost"', 'sans']
+      },
+      padding: {
+        '18': '20rem',
       }
     },
   },

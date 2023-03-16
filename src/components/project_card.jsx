@@ -11,20 +11,20 @@ const ProjectCard = ({Title, Video, Description, githubLink}) =>
 
 
     return (
-        <div className='justify-center items-center flex flex-col'>
-                        <div className="bg-black h-48 md:h-56 md:w-11/12 rounded-lg md:rounded-3xl p-6 md:p-3 shadow-md bg-cover bg-center z-1">
+        <div className='justify-center items-center flex flex-col w-full mt-2'>
+                        <div className="bg-inherit h-48 md:h-46 md:h-10/12 md:w-full rounded-lg md:rounded-3xl p-1 md:p-1  bg-cover bg-center shadow-[#BAF2BB] ring-0 ring-[#BAF2BB] flex justify-center items-center">
                         {/* <video id="video" class="w-full h-full" autoPlay muted loop>
                             <source src="https://youtu.be/20ekO3yLyUE" type="video/mp4"></source>
                         </video> */}
-                            <iframe className='h-fit md:h-full  w-fit md:w-full z-40' frameBorder="0" seamless="seamless" src={Video} title="20230302_214149 (online-video-cutter.com).mp4" webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen></iframe>
+                            <iframe className='rounded-3xl ring-2 ring-[#BAF2BB] p-2 shadow-inner shadow-black h-fit md:h-full lg:w-11/12  w-fit md:w-11/12 lg:h-11/12 z-10 ' frameBorder="0" seamless="seamless" src={Video} title="20230302_214149 (online-video-cutter.com).mp4" webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen></iframe>
                         </div>
-                        <div className="w-8/12 md:w-9/12 bg-white -mt-10 shadow-lg rounded-lg overflow-hidden p-2 md:p-5">
+                        <div className="w-8/12 md:w-9/12 bg-white -mt-5 md:-mt-10 ring-0 ring-[#BAF2BB]  shadow-2xl shadow-[#BAF2BB] rounded-lg overflow-hidden p-0 md:p-1 lg:p-2 z-50">
                         
-                            <div className="test-sm md:text-lg font-bold font-text text-center border-b-2 border-black z-50">{Title}</div>
+                            <div className="test-sm md:text-lg font-bold font-text text-center border-b-2 border-black p-2">{Title}</div>
 
                             {desbool ? (
                                 <div className='w-12/12 p-2 md:p-0 md:pt-2'>
-                                    <div className="text-[0.8rem] md:text-[0.80rem] lg:text-[0.85rem] font-text text-center ">
+                                    <div className="text-[0.8rem] md:text-[0.75rem] lg:text-[0.85rem] font-text text-center ">
                                         {Description}
                                     </div>
                                     <div className='flex justify-around mt-2 md:mt-0'>

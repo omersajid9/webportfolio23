@@ -54,16 +54,16 @@ function App() {
         <div className=" bg-inherit rounded-br-xl rounded-bl-xl justify-between md:justify-center fixed w-full md:w-fit px-6 md:items-center py-6 z-10">
         <ul className="flex  md:flex-col justify-between items-center">
             <li className="md:mx-10 md:my-5">
-              <a className="hover:text-black hover:bg-[#8BCDF9] hover:bg-opacity-50 rounded-full bg-black bg-opacity-100 p-2 text-white cursor-pointer font-bold font-base px-4 font-text  border-b-4 border-black " onClick={()=>scrollToSection(homeRef)}>Home</a>
+              <a className="text-black ring-2 ring-[#8BCDF9] shadow-inner shadow-black bg-[#8BCDF9] bg-opacity-50 rounded-full hover:bg-white hover:bg-opacity-50 p-2 hover:text-[#8BCDF9] cursor-pointer font-bold md:text-base lg:text-2xl px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(homeRef)}>Home</a>
             </li>
             <li className="md:mx-10 md:my-5">
-              <a className="hover:text-black hover:bg-[#BAF2BB] hover:bg-opacity-50 rounded-full bg-black bg-opacity-100 p-2 text-white cursor-pointer font-bold font-base px-4 font-text  border-b-4 border-black " onClick={()=>scrollToSection(projectsRef)}>Projects</a>
+              <a className="text-black ring-2 ring-[#BAF2BB] shadow-inner shadow-black bg-[#BAF2BB] bg-opacity-50 rounded-full hover:bg-white hover:bg-opacity-50 p-2 hover:text-[#BAF2BB] cursor-pointer font-bold md:text-base lg:text-2xl px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(projectsRef)}>Projects</a>
             </li>
             <li className="md:mx-10 md:my-5">
-              <a className="hover:text-black hover:bg-[#F2BAC9] hover:bg-opacity-50 rounded-full bg-black bg-opacity-100 p-2 text-white cursor-pointer font-bold font-base px-4 font-text  border-b-4 border-black " onClick={()=>scrollToSection(experienceRef)}>Experience</a>
+              <a className="text-black ring-2 ring-[#F2BAC9] shadow-inner shadow-black bg-[#F2BAC9] bg-opacity-50 rounded-full hover:bg-white hover:bg-opacity-50 p-2 hover:text-[#F2BAC9] cursor-pointer font-bold md:text-base lg:text-2xl px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(experienceRef)}>Experience</a>
             </li>
             <li className="md:mx-10 md:my-5">
-              <a className="hover:text-black hover:bg-[#F2E2BA] hover:bg-opacity-50 rounded-full bg-black bg-opacity-100 p-2 text-white cursor-pointer font-bold font-base px-4 font-text   border-b-4 border-black "  onClick={()=>scrollToSection(skillsRef)}>Skills</a>
+              <a className="text-black ring-2 ring-[#F2E2BA] shadow-inner shadow-black bg-[#F2E2BA] bg-opacity-50 rounded-full hover:bg-white hover:bg-opacity-50 p-2 hover:text-[#F2E2BA] cursor-pointer font-bold md:text-base lg:text-2xl px-4 font-text   border-b-0 border-black "  onClick={()=>scrollToSection(skillsRef)}>Skills</a>
             </li>
         </ul>
       </div>

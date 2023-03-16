@@ -17,13 +17,13 @@ const Education = () =>
     return (
         <div className="flex h-max bg-inherit justify-center items-center">
             <div className=" h-auto w-9/12 lg:w-10/12 md:w-full rounded-2xl p-2 border-b-8 border-richBlack drop-shadow-2xl shadow-2xl bg-[#BAF2BB] bg-opacity-25 pb-8">
-                <div className='flex bg-none justify-center items-center md:mb-8 '>
-                    <div className='text-center text-lg md:text-3xl font-semibold font-text m-4 bg-inherit rounded-full py-2 px-4 shadow-black shadow-sm text-black'>
-                        PROJECTS
+                <div className='flex bg-inherit ring-2 ring-[#BAF2BB] shadow-black shadow-inner  justify-center items-center  rounded-2xl md:rounded-full m-4 w-fit mx-auto'>
+                    <div className=' text-center text-lg md:text-2xl lg:text-3xl font-text font-bold  bg-none  py-2 px-10 w-fit'>
+                    PROJECTS
                     </div>
                 </div>
                 
-                <div className='snap-x snap-mandatory md:flexn md:flex-none flex flex-auto-row overflow-x-auto w-full md:grid md:grid-cols-3 gap-4 md:snap-none md:scrollbar-none scrollbar-thin scrollbar-thumb-violet-800'>
+                <div className='snap-x snap-mandatory md:flex-none flex flex-auto-row overflow-x-auto w-full space-x-2 md:space-x-0 md:grid md:grid-cols-3 md:gap-2 lg:gap-4 md:snap-none md:scrollbar-none scrollbar-thin scrollbar-thumb-violet-800'>
                     <div className="snap-center md:snap-none">
                         <ProjectCard  Title={experience1[0]} Video={experience1[1]} Description={experience1[2]} githubLink={experience1[3]}/>
                     </div>
