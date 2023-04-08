@@ -1,9 +1,27 @@
-import {react} from 'react';
-
+import {react, useEffect} from 'react';
+import {motion, useAnimation, AnimatePresence} from "framer-motion";
+import { useInView } from 'react-intersection-observer';
+const boxVariants = {
+    hidden: { scale: 0.7 },
+    visible: {
+      scale: 1,
+    }
+  }
 const Home = () =>
 {
+    const controls = useAnimation();
+    const { ref, inView } = useInView({threshold:0.5});
+
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+    if (!inView) {
+      controls.start('hidden');
+    }
+  }, [controls, inView]);
     return(
-        <div className="flex h-screen bg-inherit justify-center items-center overflow-hidden">
+        <motion.div className="flex h-screen bg-inherit justify-center items-center overflow-hidden" ref={ref} initial="hidden" animate={controls} variants={boxVariants} transition={{ type: "spring", stiffness: 400, damping:50, duration: 0.8, delay: 0.2 }}>
             <div className="   bg-[#8BCDF9] bg-opacity-25 h-auto w-11/12 md:w-10/12 lg:w-6/12 rounded-2xl p-2 border-b-8  border-richBlack shadow-2xl drop-shadow-2xl ">
                 <div className="grid grid-cols-3 ">
                     <div className='col-span-1 flex justify-around flex-col-reverse lg:flex-col'>
@@ -42,7 +60,8 @@ const Home = () =>
                     
                 </div>
             </div>
-        </div>
+        </motion.div>
+
     )
 }
 

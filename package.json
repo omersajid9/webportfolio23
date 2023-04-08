@@ -8,11 +8,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "start": "npm run dev"
-    },
+  },
   "dependencies": {
+    "framer-motion": "^10.11.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
+    "react-intersection-observer": "^9.4.3",
     "react-particles": "^2.9.3",
     "react-scroll": "^1.8.9",
     "react-tsparticles": "^2.9.3",
