@@ -2,11 +2,13 @@ import {react, useEffect} from 'react';
 import {motion, useAnimation} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 const boxVariants = {
-    hidden: { scale: 0.7 },
+    hidden: { scale: 0.7 , opacity: 0},
     visible: {
       scale: 1,
+      opacity: 1
     }
   }
+
 import ExperienceCard from './experience_card';
 
 const Experience = () =>
@@ -14,7 +16,7 @@ const Experience = () =>
 
 
     const controls = useAnimation();
-  const { ref, inView } = useInView({threshold:0.5});
+    const { ref, inView } = useInView({threshold:0.7});
 
   useEffect(() => {
     if (inView) {
@@ -28,7 +30,7 @@ const Experience = () =>
     const a = " bg-inherit border-violet-800 rounded-l-3xl border-t-8"
     const experienceA = ["Fermi National Accelerator Laboratory", "Quantum theory division intern", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a]
     const a1 = " bg-inherit border-blue-800 rounded-3xl rounded-r-none rounded-l-3xl border-t-4 border-l-4 border-b-4 pb-1 md:border-t-8 md:border-l-8 md:border-b-8 md:pb-2 z-20"
-    const experienceA1 = ["Undergraduate Researcher in Quantum Software Development", "Fermi National Accelerator Laboratory", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a1]
+    const experienceA1 = ["Undergraduate Researcher in Quantum Algorithms", "Fermi National Accelerator Laboratory", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a1]
     const a2 = " bg-inherit border-inherit rounded-l-3xl rounded-r-none rounded-3xl border-t-4 border-b-4 pb-3 -mt-2 md:border-t-8 md:border-b-8 md:pb-6 md:-mt-4 z-10"
     const experienceA2 = ["Summer Internship in Science & Technology", "Fermi National Accelerator Laboratory", "May '22 - August '22", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a2]
     const a3 = " bg-inherit border-green-800 rounded-3xl rounded-r-none rounded-l-3xl  border-t-4 border-l-4 border-b-4 pb-5 -mt-4 md:border-t-8 md:border-l-8 md:border-b-8 md:pb-10 md:-mt-8 z-20"
@@ -49,14 +51,14 @@ const Experience = () =>
     const experienceB4 = ["Information Technology Associate", "Tenzer Technology Center", "August 2020 - May 2021", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", b4]
 
     return (
-        <motion.div className="flex h-auto bg-inherit justify-center items-center" ref={ref} initial="hidden" animate={controls} variants={boxVariants} transition={{ type: "spring", stiffness: 400, damping:50, duration: 0.8, delay: 0.2 }}>
+        <motion.div className="flex h-auto bg-inherit justify-center items-center" ref={ref} initial="hidden" animate={controls} variants={boxVariants} transition={{ type: "spring", stiffness: 400, damping:50, duration: 0.8, delay: 0.3 }}>
              <div className=" bg-[#F2BAC9] bg-opacity-25 h-auto w-11/12 md:w-11/12 lg:w-8/12 rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl">
                 <div className='flex bg-inherit ring-2 ring-[#F2BAC9] shadow-black shadow-inner  justify-center items-center  rounded-2xl md:rounded-full m-4 w-fit mx-auto'>
                         <div className=' text-center text-lg md:text-2xl lg:text-3xl font-text font-bold  bg-none  py-2 px-10 w-fit'>
                         EXPERIENCE
                         </div>
                     </div>
-                <div className="h-auto overflow-y-auto md:overflow-y-visible grid-flow-row grid-cols-2 grid justify-center md:space-x-0 gap-0 md:scrollbar-none scrollbar-thin scrollbar-thumb-yellow-800 md:py-2 py-2 px-2 md:px-2 ">
+                <div className="h-auto overflow-y-auto md:overflow-y-visible grid-flow-row grid-cols-2 grid justify-center md:space-x-0 gap-0 md:scrollbar-none scrollbar-thin scrollbar-thumb-yellow-800 md:py-2 py-1 px-2 md:px-2 ">
                     {/* <div className=' md:grid md:grid-rows-5 border-0 border-black gap-0 md:flex-none flex-auto-row flex space-x-3 md:space-x-0'> */}
                         {/* <div className='border-0 h-fit border-black m-0'>
                             <ExperienceCard CompanyName={experienceA[0]} Position={experienceA[1]} Duration={experienceA[2]} ImageSrc={experienceA[3]} additionalsetting={experienceA[4]}  />

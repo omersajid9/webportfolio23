@@ -77,16 +77,16 @@ function App() {
         <div className=" bg-inherit rounded-br-xl rounded-bl-xl justify-between md:justify-center fixed w-full md:w-fit px-6 md:items-center py-6 z-10">
         <ul className="flex  md:flex-col justify-between items-center">
             <li className="md:mx-10 md:my-5">
-              <motion.button whileTap={{scale:2, transition: { duration: 2 }}} className="text-black ring-2 ring-[#8BCDF9] shadow-inner shadow-black bg-[#8BCDF9] bg-opacity-50 rounded-full py-1 cursor-pointer font-bold md:text-base lg:text-2xl px-2 md:px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(homeRef)}>Home</motion.button>
+              <motion.button whileTap={{scale:1.2, transition: { duration: .1 }}} className="text-black ring-2 ring-[#8BCDF9] shadow-inner shadow-black bg-[#8BCDF9] bg-opacity-50 rounded-full py-1 cursor-pointer font-bold md:text-base lg:text-2xl px-2 md:px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(homeRef)}>Home</motion.button>
             </li>
             <li className="md:mx-10 md:my-5">
-              <motion.button whileTap={{scale:2, transition: { duration: 2 }}} className="text-black ring-2 ring-[#BAF2BB] shadow-inner shadow-black bg-[#BAF2BB] bg-opacity-50 rounded-full py-1 cursor-pointer font-bold md:text-base lg:text-2xl px-2 md:px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(projectsRef)}>Projects</motion.button>
+              <motion.button whileTap={{scale:1.2, transition: { duration: .1 }}} className="text-black ring-2 ring-[#BAF2BB] shadow-inner shadow-black bg-[#BAF2BB] bg-opacity-50 rounded-full py-1 cursor-pointer font-bold md:text-base lg:text-2xl px-2 md:px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(projectsRef)}>Projects</motion.button>
             </li>
             <li className="md:mx-10 md:my-5">
-              <motion.button whileTap={{scale:2, transition: { duration: 2 }}} className="text-black ring-2 ring-[#F2BAC9] shadow-inner shadow-black bg-[#F2BAC9] bg-opacity-50 rounded-full py-1 cursor-pointer font-bold md:text-base lg:text-2xl px-2 md:px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(experienceRef)}>Experience</motion.button>
+              <motion.button whileTap={{scale:1.2, transition: { duration: .1 }}} className="text-black ring-2 ring-[#F2BAC9] shadow-inner shadow-black bg-[#F2BAC9] bg-opacity-50 rounded-full py-1 cursor-pointer font-bold md:text-base lg:text-2xl px-2 md:px-4 font-text  border-b-0 border-black " onClick={()=>scrollToSection(experienceRef)}>Experience</motion.button>
             </li>
             <li className="md:mx-10 md:my-5">
-              <motion.button whileTap={{scale:2, transition: { duration: 2 }}} className="text-black ring-2 ring-[#F2E2BA] shadow-inner shadow-black bg-[#F2E2BA] bg-opacity-50 rounded-full py-1 cursor-pointer font-bold md:text-base lg:text-2xl px-2 md:px-4 font-text   border-b-0 border-black "  onClick={()=>scrollToSection(skillsRef)}>Skills</motion.button>
+              <motion.button whileTap={{scale:1.2, transition: { duration: .1 }}} className="text-black ring-2 ring-[#F2E2BA] shadow-inner shadow-black bg-[#F2E2BA] bg-opacity-50 rounded-full py-1 cursor-pointer font-bold md:text-base lg:text-2xl px-2 md:px-4 font-text   border-b-0 border-black "  onClick={()=>scrollToSection(skillsRef)}>Skills</motion.button>
             </li>
         </ul>
       </div>

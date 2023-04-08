@@ -2,9 +2,10 @@ import {react, useState, useEffect, forwardRef} from 'react';
 import {motion, useAnimation} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 const boxVariants = {
-    hidden: { scale: 0.7 },
+    hidden: { scale: 0.7 , opacity: 0},
     visible: {
       scale: 1,
+      opacity: 1
     }
   }
 
@@ -27,7 +28,7 @@ const TitleHeading = ({titleName, buttonOnClick, enlight}) =>
 
 const Skills = () => {
     const controls = useAnimation();
-    const { ref, inView } = useInView({threshold:0.5});
+    const { ref, inView } = useInView({threshold:0.7});
 
   useEffect(() => {
     if (inView) {
@@ -99,7 +100,7 @@ const Skills = () => {
 
 
     return (
-            <motion.div className="flex h-auto bg-inherit justify-center items-center my-20" ref={ref} initial="hidden" animate={controls} variants={boxVariants} transition={{ type: "spring", stiffness: 400, damping:50, duration: 0.8, delay: 0.2 }}>
+            <motion.div className="flex h-auto bg-inherit justify-center items-center my-20" ref={ref} initial="hidden" animate={controls} variants={boxVariants} transition={{ type: "spring", stiffness: 400, damping:50, duration: 0.8, delay: 0.3 }}>
                 <div className=" bg-[#F2E2BA] bg-opacity-25 h-auto w-10/12 md:10/12 lg:w-8/12 rounded-2xl p-2 border-b-8 border-richBlack shadow-2xl drop-shadow-2xl shadow-seaShell">
                     <div className='flex bg-inherit ring-2 ring-[#F2E2BA] shadow-black shadow-inner  justify-center items-center  rounded-2xl md:rounded-full m-4 w-fit mx-auto'>
                         <div className=' text-center text-lg md:text-2xl lg:text-3xl font-text font-bold  bg-none  py-2 px-10 w-fit'>
