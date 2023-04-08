@@ -2,10 +2,11 @@ import {react, useEffect} from 'react';
 import {motion, useAnimation} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 const boxVariants = {
-    hidden: { scale: 0.7 , opacity: 0},
+    hidden: { scale: 0.7 , opacity: 0, x:-100},
     visible: {
       scale: 1,
-      opacity: 1
+      opacity: 1,
+      x:0
     }
   }
 

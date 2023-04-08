@@ -2,13 +2,15 @@ import {react, useEffect} from 'react';
 import {motion, useAnimation, AnimatePresence} from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 const boxVariants = {
-    hidden: { scale: 0.7 , opacity: 0},
+    hidden: { scale: 0.7 , opacity: 0, x:-100},
     visible: {
       scale: 1,
-      opacity: 1
+      opacity: 1,
+      x:0
     }
   }
-import ProjectCard from './project_card';
+
+  import ProjectCard from './project_card';
 
 const experience1 = ["Peer2Peer message", "https://www.youtube.com/embed/yqWX86uT5jM?rel=0&autoplay=1&mute=1&loop=1&playlist=yqWX86uT5jM&modestbranding=1&controls=0", "Developing a peer-to-peer messaging application in C using socket programming and multi-threading. The application, in future, would include encryption services mimicking a blockchain on a local network", "https://github.com/omersajid9"]
 const experience2 = ["NFT Marketplace", "https://www.youtube.com/embed/20ekO3yLyUE?rel=0&autoplay=1&mute=1&loop=1&playlist=20ekO3yLyUE&modestbranding=1&controls=0", " Designed a full-stack web3 application with the functionality to mint and purchase NFTs. Leveraged inheritance in Solidity to build my smart contracts and used Inter-Planatary File System for storage. Used frameworks like React.Js, Node.Js, Hardhat, and TailwindCSS.", "https://github.com/omersajid9/NFT-marketplace"]
