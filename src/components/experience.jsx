@@ -31,9 +31,9 @@ const Experience = () =>
     const a = " bg-inherit border-violet-800 rounded-l-3xl border-t-8"
     const experienceA = ["Fermi National Accelerator Laboratory", "Quantum theory division intern", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a]
     const a1 = " bg-inherit border-blue-800 rounded-3xl rounded-r-none rounded-l-3xl border-t-4 border-l-4 border-b-4 pb-1 md:border-t-8 md:border-l-8 md:border-b-8 md:pb-2 z-20"
-    const experienceA1 = ["Undergraduate Researcher in Quantum Algorithms", "Fermi National Accelerator Laboratory", "August '22 - Present", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a1]
+    const experienceA1 = ["Quantum Software Researcher", "Fermi National Accelerator Laboratory", "August '22 - Present", "https://openlab.web.cern.ch/sites/default/files/2022-08/resized%20fermilab%20%281%29.png", a1]
     const a2 = " bg-inherit border-inherit rounded-l-3xl rounded-r-none rounded-3xl border-t-4 border-b-4 pb-3 -mt-2 md:border-t-8 md:border-b-8 md:pb-6 md:-mt-4 z-10"
-    const experienceA2 = ["Summer Internship in Science & Technology", "Fermi National Accelerator Laboratory", "May '22 - August '22", "https://pbs.twimg.com/profile_images/634856987465904128/mpfSh-t8.png", a2]
+    const experienceA2 = ["Summer Internship in Science & Technology", "Fermi National Accelerator Laboratory", "May '22 - August '22", "https://openlab.web.cern.ch/sites/default/files/2022-08/resized%20fermilab%20%281%29.png", a2]
     const a3 = " bg-inherit border-green-800 rounded-3xl rounded-r-none rounded-l-3xl  border-t-4 border-l-4 border-b-4 pb-5 -mt-4 md:border-t-8 md:border-l-8 md:border-b-8 md:pb-10 md:-mt-8 z-20"
     const experienceA3 = ["Research Assistant: UCNtau Experiment", "DePauw University", "September '20 - August '21", "https://www.onlinedegree.com/wp-content/uploads/2017/01/depauw-university-logo.jpg", a3]
     const a4 = " bg-inherit border-inherit rounded-3xl rounded-r-none rounded-l-3xl border-t-4 border-b-4 pb-7 -mt-6 md:border-t-8 md:border-b-8 md:pb-14 md:-mt-12"

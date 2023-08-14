@@ -17,11 +17,13 @@ const TitleHeading = ({titleName, buttonOnClick, enlight}) =>
 {
 
     const [toggle, setToggle] = useState(enlight);
-
-    const styling = toggle ? 'bg-black text-[#F2E2BA] shadow-inner shadow-current' : 'bg-[#F2E2BA] text-black shadow-inner shadow-black'
+    console.log("Inside")
+    console.log(titleName)
+    console.log(enlight)
+    const styling = enlight ? 'bg-black text-[#F2E2BA] shadow-inner shadow-current' : 'bg-[#F2E2BA] text-black shadow-inner shadow-black'
 
     return (
-        <button key={titleName} className={"md:m-1 m-[0.2rem] w-fit px-2.5 py-1.5 md:py-1 md:px-2 lg:py-2 lg:px-4 rounded-2xl text-[0.8rem] md:text-base lg:text-lg shadow-lg font-text " + styling} onClick={()=>{setToggle(!toggle);buttonOnClick(titleName)}}>
+        <button key={titleName} className={"md:m-1 m-[0.2rem] w-fit px-2.5 py-1.5 md:py-1 md:px-2 lg:py-2 lg:px-4 rounded-2xl text-[0.8rem] md:text-base lg:text-lg shadow-lg font-text " + styling} onClick={()=>{buttonOnClick(titleName)}}>
             {titleName}
         </button>
     )
@@ -41,36 +43,70 @@ const Skills = () => {
     }
   }, [controls, inView]);
     const skillsData = {
+        'All': [],
         'Quantum Computing': ['Python', 'Qiskit', 'Qutip', 'Pennylane'],
-        'Machine Learning': ['Python', 'NumPy', 'SciPy', 'TensorFlow'],
-        'Website Development': ['JavaScript', 'ReactJs', 'Express', 'jQuery', 'Bootstrap', 'HTML5', 'CSS3', 'NodeJs', 'MongoDB', 'SQL'],
+        'Machine Learning': ['Python', 'NumPy', 'SciPy', 'TensorFlow', 'Langchain', 'OpenAI', 'Pinecone'],
+        'Web Development': ['JavaScript', 'ReactJs', 'Express', 'jQuery', 'Bootstrap', 'HTML5', 'CSS3', 'NodeJs', 'MongoDB', 'SQL'],
         'Testing': ['JavsScript', 'Chai', 'Mocha'],
         'Data Analysis': ['R', 'Python', 'FermiScienceTools', 'Root', 'C++'],
         'Cloud Computing': ['AWS CLI', 'AWS S3', 'AWS EC2'],
         'BlockChain': ['Solidity', 'Hardhat', 'OpenZepplin', 'Alchemy', 'Metamask'],
-        'Socket Programming': ['C'],
-        'Version Control': ['GitHub', 'Git'],
+        'Networking': ['C', 'TCP/IP'],
+        'DevOps': ['GitHub', 'Git', 'Docker', 'Kubernetes'],
         'Mobile Development': ['Java', 'Android Studio', 'MySQL', 'PHP']
     }
+    const toggleData = {
+        'All': false,
+        'Quantum Computing': false,
+        'Machine Learning': false,
+        'Web Development': false,
+        'Testing': false,
+        'Data Analysis': false,
+        'Cloud Computing': false,
+        'BlockChain': false,
+        'Socket Programming': false,
+        'DevOps': false,
+        'Mobile Development': false
+    }
+    let z = []
+    for (let k in skillsData)
+    {
+        z = z.concat(skillsData[k]);
+        // console.log("AS")
+        // console.log(skillsData[k])
+        // console.log(z)
+    }
+    // console.log("BS")
+    // console.log(z)
+    z = new Set(z);
+    z = Array.from(z)
+    skillsData['All'] = z
+    // console.log("SSSS")
+    // console.log(z)
 
-    const [selectedTitle, setSelectedTitle] = useState(['Website Development']);
-    const [skillsSet, setSkillsSet] = useState(['OLLALA']);
-
+    const [selectedTitle, setSelectedTitle] = useState(['All']);
+    const [skillsSet, setSkillsSet] = useState(['']);
+    toggleData[selectedTitle] = true;
 
     const buttonClick = (name) =>
     {
+        toggleData[selectedTitle[0]] = false
+        console.log(selectedTitle)
+        console.log(toggleData)
         console.log(name)
-        if (selectedTitle.includes(name))
-        {
-            let a = selectedTitle.filter((item)=> {return item!== name;});
-            setSelectedTitle(a);
-        }
-        else
-        {
-            let a = [...selectedTitle];
-            a.push(name);
-            setSelectedTitle(a);
-        }
+        setSelectedTitle([name])
+        toggleData[selectedTitle[0]] = true
+        // if (selectedTitle.includes(name))
+        // {
+        //     let a = selectedTitle.filter((item)=> {return item!== name;});
+        //     setSelectedTitle(a);
+        // }
+        // else
+        // {
+        //     let a = [...selectedTitle];
+        //     a.push(name);
+        //     setSelectedTitle(a);
+        // }
     }
 
     useEffect(()=>
@@ -91,14 +127,11 @@ const Skills = () => {
         s = Array.from(s)
         s.sort()
         setSkillsSet(s);
-        console.log(skillsSet)
     }, [selectedTitle])
 
-    useEffect(()=>
-    {
-        console.log("AAA")
-        console.log(skillsSet);
-    }, [skillsSet])
+    // useEffect(()=>
+    // {
+    // }, [skillsSet])
 
 
     return (
@@ -113,7 +146,9 @@ const Skills = () => {
                         {
                             Object.keys(skillsData).map((ke, val) =>
                             {
-                                return ke == selectedTitle[0] ? (<TitleHeading key={ke} titleName={ke} buttonOnClick={buttonClick} enlight={true}/>) : (<TitleHeading key={ke} titleName={ke} buttonOnClick={buttonClick} enlight={false}/>)
+                                console.log(ke)
+                                console.log(toggleData[ke])
+                                return selectedTitle.includes(ke) ? (<TitleHeading key={ke} titleName={ke} buttonOnClick={buttonClick} enlight={toggleData[ke]}/>) : (<TitleHeading key={ke} titleName={ke} buttonOnClick={buttonClick} enlight={toggleData[ke]}/>)
                             }
 
                             )
