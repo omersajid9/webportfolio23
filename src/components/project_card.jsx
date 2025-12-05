@@ -1,5 +1,4 @@
-import {react, useState} from 'react';
-// import {BsFillArrowDownCircleFill} from 'react-icons'
+import React, { useState } from 'react';
 import { BsFillArrowDownCircleFill, BsFillArrowUpCircleFill } from 'react-icons/bs';
 
 
@@ -13,10 +12,7 @@ const ProjectCard = ({Title, Video, Description, githubLink}) =>
     return (
         <div className='justify-center items-center flex flex-col w-full mt-2'>
                         <div className="bg-inherit h-48 md:h-46 md:h-10/12 md:w-full rounded-lg md:rounded-3xl p-1 md:p-1  bg-cover bg-center shadow-[#BAF2BB] ring-0 ring-[#BAF2BB] flex justify-center items-center">
-                        {/* <video id="video" class="w-full h-full" autoPlay muted loop>
-                            <source src="https://youtu.be/20ekO3yLyUE" type="video/mp4"></source>
-                        </video> */}
-                            <iframe className='rounded-3xl ring-2 ring-[#BAF2BB] p-2 shadow-inner shadow-black h-fit md:h-full lg:w-11/12  w-fit md:w-11/12 lg:h-11/12 z-10 ' frameBorder="0" seamless="seamless" src={Video} title="20230302_214149 (online-video-cutter.com).mp4" webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen></iframe>
+                            <iframe className='rounded-3xl ring-2 ring-[#BAF2BB] p-2 shadow-inner shadow-black h-fit md:h-full lg:w-11/12  w-fit md:w-11/12 lg:h-11/12 z-10 ' frameBorder="0" seamless="seamless" src={Video} title="20230302_214149 (online-video-cutter.com).mp4" webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen loading="lazy"></iframe>
                         </div>
                         <div className="w-8/12 md:w-9/12 bg-white -mt-5 md:-mt-10 ring-0 ring-[#BAF2BB]  shadow-2xl shadow-[#BAF2BB] rounded-lg overflow-hidden p-0 md:p-1 lg:p-2 z-50">
                         

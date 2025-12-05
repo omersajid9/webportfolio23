@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scroll snap optimizations */
+.snap-y {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Simple CSS animations to replace framer-motion */
+.fade-in-slide {
+  opacity: 0;
+  transform: scale(0.7) translateX(-100px);
+  transition: opacity 0.8s ease-out 0.3s, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s;
+  will-change: transform, opacity;
+}
+
+.fade-in-slide.visible {
+  opacity: 1;
+  transform: scale(1) translateX(0);
+}
+
+/* Button press animation */
+.btn-press {
+  transition: transform 0.1s ease-out;
+}
+
+.btn-press:active {
+  transform: scale(1.2);
+}
+
+/* FontAwesome - only import specific icons used */
+@import "@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "@fortawesome/fontawesome-free/css/solid.css";
