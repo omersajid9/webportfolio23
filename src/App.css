@@ -33,7 +33,3 @@
 .btn-press:active {
   transform: scale(1.2);
 }
-
-/* FontAwesome - only import specific icons used */
-@import "@fortawesome/fontawesome-free/css/fontawesome.css";
-@import "@fortawesome/fontawesome-free/css/solid.css";
