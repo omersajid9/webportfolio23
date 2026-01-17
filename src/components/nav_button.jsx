@@ -26,7 +26,7 @@ const NavButton = ({ color, reference, icon, title, scrollToSection }) => {
       >
         {icon}
         {hover && (
-          <div className='transition-all duration-300 ease-in-out'>{title}</div>
+          <div className='transition-all duration-300 ease-in-out hidden md:visible'>{title}</div>
         )}
         
       </button>

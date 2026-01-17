@@ -40,12 +40,12 @@ function App() {
 
   return (
     <div ref={bigPage} className="App items-center justify-center bg-fixed overflow-hidden select-none">
-
-      <div className='w-full h-full flex md:flex-row flex-col md:px-10 justify-around'>
+      <div className='w-full h-full flex md:flex-row flex-col md:px-10 justify-center'>
         <div id='sidebar' className='
         flex flex-row justify-around items-center my-2
         md:flex-col  md:justify-center md:items-start start-px md:h-screen md:gap-4 
-        md:absolute lg:left-28 md:left-2
+        absolute lg:left-28 md:left-2
+        top-0 w-full
         z-10
         bg-transparent
        '>
@@ -60,7 +60,7 @@ function App() {
 
         <div id='content' ref={scrollPage} className='
         snap-y h-screen overflow-y-scroll scrollbar-none snap-mandatory overflow-hidden mx-2 md:mx-12 max-w-7xl
-        lg:ml-28 md:ml-2 ml-0 -mt-10 md:mt:0
+        lg:ml-28 md:ml-2 ml-0
       '>
           <div ref={homeRef} id="Home" className="snap-start min-h-screen flex items-center justify-center">
             <Home />

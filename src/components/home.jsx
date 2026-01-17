@@ -29,7 +29,7 @@ const Home = () => {
                     </div>
                     <div className='flex flex-col justify-between items-center gap-4'>
                         <div className='flex bg-inherit ring-2 ring-section-home shadow-black shadow-inner  justify-center items-center  rounded-2xl md:rounded-full '>
-                            <div className=' text-center text-xl md:text-3xl font-text font-bold  bg-none  py-2 px-10 w-fit'>
+                            <div className=' text-center text-xl md:text-3xl font-text font-bold  bg-none  py-2 md:px-10 px-4 w-fit'>
                                 Omer Sajid
                             </div>
                         </div>
