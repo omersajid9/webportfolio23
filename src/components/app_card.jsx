@@ -37,7 +37,7 @@ const AppCard = ({ AppDetails }) => {
                         </div>
                     </div>
                 ) : (
-                    <div className=''>
+                    <div className='p-2 md:p-0 md:pt-2'>
                         <div className='flex flex-row items-center justify-center gap-4 mt-2 md:mt-1'>
                             <button className="bg-inherit block rounded" onClick={() => setDesBool(true)}>
                                 <CaretCircleDown weight="fill" className="h-6 w-6 rounded-full border-black border-2 cursor-pointer aspect-square flex items-center justify-center " />
