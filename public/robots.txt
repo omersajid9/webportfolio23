@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /about.html
+Allow: /resume.pdf
+
+# Sitemap location
+Sitemap: https://iomersajid.pw/sitemap.xml
+
+# Crawl-delay (optional, helps prevent overwhelming your server)
+Crawl-delay: 1
