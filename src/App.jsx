@@ -60,7 +60,7 @@ function App() {
 
         <div id='content' ref={scrollPage} className='
         snap-y h-screen overflow-y-scroll scrollbar-none snap-mandatory overflow-hidden mx-2 md:mx-12 max-w-7xl
-        lg:ml-28 md:ml-2 ml-0
+        lg:ml-28 md:ml-2 ml-0 -mt-10 md:mt:0
       '>
           <div ref={homeRef} id="Home" className="snap-start min-h-screen flex items-center justify-center">
             <Home />
