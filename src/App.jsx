@@ -4,9 +4,9 @@ import './App.css'
 import Home from './components/home'
 import Projects from './components/projects'
 import Applications from './components/applications'
-const Experience = lazy(() => import('./components/experience'))
-const Education = lazy(() => import('./components/education'))
-const Skills = lazy(() => import('./components/skills'))
+import Experience from './components/experience'
+import Education from './components/education'
+import Skills from './components/skills'
 import NavButton from './components/nav_button'
 import Publications from './components/publications'
 
@@ -46,6 +46,7 @@ function App() {
         md:flex-col  md:justify-center md:items-start start-px md:h-screen md:gap-4 
         absolute lg:left-28 md:left-2
         top-0 w-full
+        md:w-fit
         z-10
         bg-transparent
        '>
