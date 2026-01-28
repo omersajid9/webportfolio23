@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Netlify automatically handles gzip compression, so we don't need to configure it
+# Headers are configured in public/_headers file
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
