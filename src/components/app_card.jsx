@@ -13,7 +13,7 @@ const AppCard = ({ AppDetails }) => {
     return (
         <div className='justify-center items-center flex flex-col mt-2'>
             <div className="rounded-3xl flex justify-center h-[calc(70dvh-4rem)] items-center p-1 mx-2 md:mx-4">
-                <img className='rounded-3xl ring-2 ring-section-applications p-2 shadow-inner shadow-black z-10 w-auto h-full object-contain flex-shrink-0' src={AppDetails.image}  loading="lazy" />
+                <img className='rounded-3xl ring-2 ring-section-applications p-2 shadow-inner shadow-black z-10 w-auto h-full object-contain flex-shrink-0' src={AppDetails.image} loading="lazy" width="262" height="570" />
             </div>
             <div className="w-48 bg-white/60 backdrop-blur-sm border-black shadow-inner border -mt-5 md:-mt-10 ring-0 ring-section-applications  shadow-black/20 rounded-lg overflow-hidden p-0 md:p-1 lg:p-2 z-50">
                 <div className="text-sm md:text-lg lg:text-xl font-bold font-text text-center border-b-2 border-black p-2">

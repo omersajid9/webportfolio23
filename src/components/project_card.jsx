@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { CaretCircleDown } from '@phosphor-icons/react/dist/csr/CaretCircleDown';
 import { CaretCircleUp } from '@phosphor-icons/react/dist/csr/CaretCircleUp';
 import { GithubLogo } from '@phosphor-icons/react/dist/csr/GithubLogo';
@@ -8,12 +9,18 @@ import { GithubLogo } from '@phosphor-icons/react/dist/csr/GithubLogo';
 
 const ProjectCard = ({ Title, Video, Description, githubLink }) => {
     const [desbool, setDesBool] = useState(false)
-
+    const { ref, inView } = useInView({ threshold: 0.1, triggerOnce: true });
 
     return (
         <div className='justify-center items-center flex flex-col mt-2'>
-            <div className="bg-inherit h-48 md:h-46 md:h-10/12 md:w-full rounded-lg md:rounded-3xl p-1 bg-cover bg-center shadow-section-projects ring-0 ring-section-projects flex justify-center items-center">
-                <iframe className='rounded-3xl ring-2 ring-section-projects p-2 shadow-inner shadow-black h-fit md:h-full  w-fit md:w-11/12 lg:h-11/12 z-10 ' frameBorder="0" seamless="seamless" src={Video} webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen loading="lazy"></iframe>
+            <div ref={ref} className="bg-inherit h-48 md:h-46 md:h-10/12 md:w-full rounded-lg md:rounded-3xl p-1 bg-cover bg-center shadow-section-projects ring-0 ring-section-projects flex justify-center items-center">
+                {inView ? (
+                    <iframe className='rounded-3xl ring-2 ring-section-projects p-2 shadow-inner shadow-black h-fit md:h-full  w-fit md:w-11/12 lg:h-11/12 z-10 ' frameBorder="0" seamless="seamless" src={Video} webkitallowfullscreen='true' mozallowfullscreen='true' allowFullScreen loading="lazy"></iframe>
+                ) : (
+                    <div className='rounded-3xl ring-2 ring-section-projects p-2 shadow-inner shadow-black h-fit md:h-full w-fit md:w-11/12 lg:h-11/12 z-10 bg-gray-200 flex items-center justify-center'>
+                        <div className="text-gray-500">Loading video...</div>
+                    </div>
+                )}
             </div>
             <div className=" max-w-[clamp(50px, 200px, 15dvw)] bg-white/40 backdrop-blur-sm border-black shadow-inner border -mt-5 md:-mt-10 ring-0 ring-section-projects shadow-section-projects rounded-lg overflow-hidden p-0 md:p-1 lg:p-2 z-50">
                 <div className="text-sm md:text-lg lg:text-xl font-bold font-text text-center border-b-2 border-black p-2">

@@ -12,7 +12,7 @@ const Home = () => {
                 <div className="flex flex-row gap-4 ">
                     <div className='flex flex-col-reverse md:flex-col gap-4 justify-between md:justify-end'>
                         <div className=' h-36 w-36 md:h-48 md:w-48 lg:h-52 lg:w-52  bg-inherit ring-2 ring-section-home  shadow-black shadow-inner rounded-3xl self-center'>
-                            <img className="object-cover rounded-full" src="/avatar.png" />
+                            <img className="object-cover rounded-full" src="/avatar.png" width="208" height="208" alt="Omer Sajid" />
                         </div>
                         <div className='bg-white opacity-75 ring-2 ring-section-home shadow-black shadow-inner rounded-3xl px-2 mx-auto max-w-max md:min-w-full md:mx-0 flex md:flex-row flex-col items-center py-2 md:justify-evenly gap-2'>
                             {/* <div className=''> */}
